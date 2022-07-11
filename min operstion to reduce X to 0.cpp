@@ -3,6 +3,7 @@
 Input: nums = [1,1,4,2,3], x = 5
 Output: 2
 Explanation: The optimal solution is to remove the last two elements to reduce x to zero.
+*/
 
 
  int minOperations(vector<int>& nums, int x) {
