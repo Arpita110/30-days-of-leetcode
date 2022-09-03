@@ -5,7 +5,7 @@ public:
     map<char,int>mp;
     int len = s.size() - 1;
     int cnt = 0;
-    while(r!=s.size()) 
+    while(r<=s.size()) 
     {
         mp[s[r]]+=1; 
         while(mp['a'] and mp['b'] and mp['c']) 
