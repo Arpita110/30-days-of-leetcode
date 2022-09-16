@@ -7,7 +7,7 @@ public:
 			return;
 		}
 		if (i == 9) return;
-		if (sum - v[i] >= 0)
+		if ( v[i] <= sum)
         {
 			curr.push_back(v[i]);
 			f(i + 1, k - 1, sum - v[i], v, curr);
