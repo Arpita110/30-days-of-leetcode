@@ -35,7 +35,7 @@ public:
         reverse(nsr.begin(), nsr.end());
         vector<int> ansarr;
         for(int i = 0; i < heights.size(); i++){
-            ansarr.push_back((nsr[i] - nsl[i] - 1) * heights[i]);
+            ansarr.push_back(abs(nsr[i] - nsl[i] - 1) * heights[i]);
         }
         int ans = *max_element(ansarr.begin(), ansarr.end());
         return ans;
